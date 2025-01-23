@@ -78,6 +78,11 @@ img {
     border-radius: 8px;
 }
 
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
 .highlight {
     background-color: #f4f4f4;
     padding: 10px;
