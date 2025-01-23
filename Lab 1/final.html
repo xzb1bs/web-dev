@@ -1,72 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Topics Demo</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Volleyball</title>
+    <link rel="icon"
+        href="https://yandex.kz/images/search?text=volleyball+icon&img_url=https%3A%2F%2Fcdn.kibrispdr.org%2Fdata%2F869%2Fvolleyball-icon-png-14.png&pos=0&rpt=simage&serp_list_type=all&stype=image&lr=162&parent-reqid=1737611845448049-12177042706697989494-balancer-term-kz-yp-vla-5-BAL&source=serp"
+        type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #81f80a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            color: #0bf00e;
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 10px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: 1px solid green;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .highlight {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #intro {
+            background-color: #ffe7e7;
+            border-left: 0px solid #ff6b6b;
+            padding: 10px;
+        }
+    </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Welcome to HTML Topics</h1>
-</header>
+    <header>
+        <h1>Volleyball - A Sport of Teamwork and Skill</h1>
+    </header>
 
-<nav>
-    <a href="#introduction">Introduction</a>
-    <a href="#elements">Elements</a>
-    <a href="#attributes">Attributes</a>
-    <a href="#styles">Styles</a>
-    <a href="#lists">Lists</a>
-</nav>
+    <div id="intro">
+        <h2>What is a Volleyball?</h2>
+        <p>Volleyball is a dynamic team sport that combines athleticism, strategy, and coordination. Played on a court
+            divided by a net, teams compete to score points by hitting the ball over the net and into the opposing
+            team’s court.</p>
+        <button onclick="window.location.href='https://en.wikipedia.org/wiki/Volleyball';">Learn More</button>
+    </div>
 
-<section id="introduction">
-    <h2>HTML Introduction</h2>
-    <p>HTML (HyperText Markup Language) is the standard language for creating webpages. It uses elements to structure content and provide functionality.</p>
-</section>
+    <div>
+        <h2>Basic Rules</h2>
+        <ul>
+            <li>Each team has six players on the court at a time.</li>
+            <li>A team can hit the ball up to three times before it must cross the net.</li>
+            <li>Points are scored when the ball hits the ground on the opponent’s side.</li>
+            <li>The game is played in sets, usually best of five.</li>
+        </ul>
+    </div>
 
-<section id="elements">
-    <h2>HTML Elements</h2>
-    <p>HTML elements are building blocks of a webpage. For example:</p>
-    <ul>
-        <li>&lt;h1&gt; - Heading</li>
-        <li>&lt;p&gt; - Paragraph</li>
-        <li>&lt;div&gt; - Container</li>
-    </ul>
-</section>
+    <div>
+        <h2>Famous Competitions</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Competition</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>FIVB Volleyball World Championships</td>
+                    <td>Every 4 Years</td>
+                    <td>Various Locations</td>
+                </tr>
+                <tr>
+                    <td>Olympic Volleyball Tournament</td>
+                    <td>Every 4 Years</td>
+                    <td>Olympic Host City</td>
+                </tr>
+                <tr>
+                    <td>Volleyball Nations League</td>
+                    <td>Annual</td>
+                    <td>Various Locations</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-<section id="attributes">
-    <h2>HTML Attributes</h2>
-    <p>Attributes provide additional information about elements. For example:</p>
-    <code>&lt;a href="https://example.com" target="_blank"&gt;Visit Example&lt;/a&gt;</code>
-</section>
+    <div>
+        <h2>Key Skills in Volleyball</h2>
+        <p>Volleyball players need to master a range of skills, including:</p>
+        <ul>
+            <li><strong>Serving</strong>: Initiating the play with a controlled hit over the net.</li>
+            <li><strong>Passing</strong>: Accurately directing the ball to teammates.</li>
+            <li><strong>Setting</strong>: Preparing the ball for an attack.</li>
+            <li><strong>Spiking</strong>: Powerfully hitting the ball to score points.</li>
+            <li><strong>Blocking</strong>: Preventing the opponent's attack by jumping at the net.</li>
+        </ul>
+    </div>
 
-<section id="styles">
-    <h2>HTML Styles</h2>
-    <p>HTML allows inline styles using the <code>style</code> attribute or external stylesheets. Example of inline styling:</p>
-    <p style="color: blue; font-weight: bold;">This is a styled paragraph.</p>
-</section>
+    <div>
+        <h2>Interesting Facts About Volleyball</h2>
+        <p><em>Did you know?</em> Volleyball was invented in 1895 by William G. Morgan, and the first Olympic volleyball
+            competition was held in 1964 in Tokyo.</p>
+        <p>Another fun fact: Beach volleyball, a variation of the sport, is played on sand with teams of two players
+            each.</p>
+    </div>
 
-<section id="lists">
-    <h2>HTML Lists</h2>
-    <p>HTML supports ordered and unordered lists. Example:</p>
-    <h3>Unordered List:</h3>
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
-    <h3>Ordered List:</h3>
-    <ol>
-        <li>Step 1</li>
-        <li>Step 2</li>
-        <li>Step 3</li>
-    </ol>
-</section>
-
-<footer>
-    <p>&copy; 2025 HTML Topics Demo</p>
-</footer>
+    <div>
+        <h2>Additional Information</h2>
+        <p>For more information about volleyball, visit <a href="https://www.fivb.com" target="_blank">FIVB Official
+                Website</a>.</p>
+        <div class="highlight">
+            <h3>Quick Facts:</h3>
+            <ul>
+                <li>Origin: United States (1895)</li>
+                <li>Olympic Sport Since: 1964</li>
+                <li>Playing Surface: Indoor (court) or Outdoor (sand)</li>
+            </ul>
+        </div>
+    </div>
 
 </body>
+
 </html>
