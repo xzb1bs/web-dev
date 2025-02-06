@@ -6,8 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
     function addTask() {
         if (!taskInput.value.trim()) return;
         const li = document.createElement("li");
-        li.innerHTML = `<input type="checkbox"> <span>${taskInput.value}</span> <span class="delete">🗑</span>`;
-        taskList.appendChild(li);
+        li.innerHTML = `
+        <input type="checkbox">
+        <span>${taskInput.value}</span>
+        <span class="delete">
+            <img src="https://www.flaticon.com/free-icons/delete" alt="Delete" width="20">
+        </span>
+    `;
+            taskList.appendChild(li);
         taskInput.value = "";
         saveTasks();
     }
