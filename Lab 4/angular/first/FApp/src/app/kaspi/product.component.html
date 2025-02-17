@@ -1,0 +1,25 @@
+<!-- src/app/products/products.component.html -->
+<div class="products-container">
+  <div class="product-card" *ngFor="let product of products">
+    <a [href]="product.link" target="_blank">
+      <img [src]="product.image"  class="main-image">
+    </a>
+
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.description }}</p>
+    <p><strong>Rating:</strong> {{ product.rating }}</p>
+
+    <!-- Optional Product Image Gallery -->
+    <div class="gallery">
+      <div class="gallery-item"  *ngFor="let img of product.gallery">
+        <img [src]="img" (click)="on(product, img)">
+      </div>
+    </div>
+
+    <!-- Share buttons -->
+    <div class="share-buttons">
+      <button (click)="shareViaWhatsApp(product)" class="wpbutton">WhatsApp</button>
+      <button (click)="shareViaTelegram(product)" class = "tgbutton">Telegram</button>
+    </div>
+  </div>
+</div>
