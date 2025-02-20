@@ -6,15 +6,15 @@ import { Component, OnInit } from '@angular/core';
 interface Product {
   id: number;
   name: string;
+ 
   description: string;
   rating: number;
+  price: number;
   link: string;
   image: string;
   gallery: string[];
 }
-// |
-// v
-// its a decorator
+
 @Component({                    
   selector: 'app-header',
   imports: [NgFor],
@@ -25,61 +25,75 @@ export class HeaderComponent implements OnInit {
   products: Product[] = [
     {
       id: 1,
-      name: 'Apple iPhone 13',
-      description: 'Latest iPhone with A15 Bionic chip.',
-      rating: 4.8,
-      link: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-sinii-102298364/',
-      image: 'https://resources.cdn-kaspi.kz/img/m/p/hba/h2e/64206204993566.jpg?format=gallery-medium',
+      name: 'чехол для iPhone 13',
+      
+      description: 'Чехол Для Apple iPhone 13 прозрачный.',
+      rating: 5,
+      price: 100,
+      link: 'https://kaspi.kz/shop/p/dlja-apple-iphone-13-prozrachnyi-106185651/?c=750000000',
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/h5c/hec/86261115060254.png?format=gallery-medium',
       gallery: [
-        'https://resources.cdn-kaspi.kz/img/m/p/hba/h2e/64206204993566.jpg?format=gallery-medium',
-        'https://resources.cdn-kaspi.kz/img/m/p/hb8/h32/64206209384478.jpg?format=gallery-medium',
-        'https://resources.cdn-kaspi.kz/img/m/p/he8/h1c/64206212857886.jpg?format=gallery-medium'
-      ]
+]
     },
+    
+    
     {
       id: 2,
-      name: 'Samsung Galaxy S22',
-      description: 'Newest Samsung smartphone with dynamic AMOLED display.',
+      name: 'iPhone 13',
+      
+      description: 'iPhone 13 offers a sleek design, A15 Bionic chip, and an improved dual-camera system. ',
       rating: 4.6,
-      link: 'https://kaspi.kz/shop/p/samsung-galaxy-s22-8-gb-256-gb-chernyi-103667959/?c=750000000',
-      image: 'https://resources.cdn-kaspi.kz/img/m/p/h11/h6b/86009675218974.png?format=gallery-medium',
+      price: 271525,
+      link: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-chernyi-102298404/?c=750000000',
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/h32/h70/84378448199710.jpg?format=gallery-medium',
       gallery: [
-        'https://resources.cdn-kaspi.kz/img/m/p/hd6/h80/86009675251742.png?format=gallery-medium',
-        'https://resources.cdn-kaspi.kz/img/m/p/hbb/h9f/86009675317278.png?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h35/h8f/84378448232478.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h3d/h8e/64208874405918.jpg?format=gallery-medium',
         'https://resources.cdn-kaspi.kz/img/m/p/h71/hed/86009675382814.png?format=gallery-medium'
       ]
     },
+    
+    
     {
       id: 3,
-      name: 'Xiaomi Redmi Note 11',
-      description: 'Affordable smartphone with great performance.',
-      rating: 4.4,
-      link: 'https://kaspi.kz/shop/p/xiaomi-redmi-note-11-6-gb-128-gb-seryi-103995646/?c=750000000',
-      image: 'https://resources.cdn-kaspi.kz/img/m/p/hab/hc5/86009679904798.png?format=gallery-medium',
+      name: 'iPhone 16 Pro Max',
+      
+      description: 'iPhone 16 Pro Max features a 6.9-inch display, A18 Pro chip, and a 48MP Ultra Wide camera.',
+      rating: 5,
+      price: 670968,
+      link: 'https://kaspi.kz/shop/p/apple-iphone-16-pro-max-256gb-chernyi-123787551/?c=750000000',
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/hcf/h69/87295489343518.png?format=gallery-medium',
       gallery: [
-        'https://resources.cdn-kaspi.kz/img/m/p/hab/hc5/86009679904798.png?format=gallery-medium',
-        'https://resources.cdn-kaspi.kz/img/m/p/h27/h45/86009679937566.png?format=gallery-medium',
-        'https://resources.cdn-kaspi.kz/img/m/p/hec/h5a/86009679970334.png?format=gallery-medium'
+        'https://resources.cdn-kaspi.kz/img/m/p/h08/hd3/87295489376286.png?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h04/h8b/87295489409054.png?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/hfc/h0c/87295489441822.png?format=gallery-medium'
       ]
     },
+   
+   
     {
       id: 4,
-      name: 'Lenovo Legion Phone Duel 2',
-      description: 'A gaming smartphone with powerful specs.',
+      name: 'Xiaomi Redmi 13C 8',
+      
+      description: 'Xiaomi Redmi 13C 8GB features a 6.74-inch display, Helio G85 chip, and 256GB storage.',
       rating: 4.5,
-      link: 'https://kaspi.kz/shop/p/lenovo-legion-slim-5-16-32-gb-ssd-1000-gb-bez-os-16ahp9-83dh005rrk-119935984/?c=750000000',
-      image: 'https://resources.cdn-kaspi.kz/img/m/p/hd4/hc9/86158174224414.jpg?format=gallery-medium',
+      price: 48442,
+      link: 'https://kaspi.kz/shop/p/xiaomi-redmi-13c-8-gb-256-gb-chernyi-114695323/?c=750000000',
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/h1b/h77/84526902706206.jpg?format=gallery-medium',
       gallery: [
-        'https://resources.cdn-kaspi.kz/img/m/p/hd4/hc9/86158174224414.jpg?format=gallery-medium',
-        'https://resources.cdn-kaspi.kz/img/m/p/h60/h56/86158174289950.jpg?format=gallery-medium',
-        'https://resources.cdn-kaspi.kz/img/m/p/hc8/h7f/86158174355486.jpg?format=gallery-medium'
-      ]
+        'https://resources.cdn-kaspi.kz/img/m/p/hf4/h4b/84526902771742.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h0f/h2d/84526902837278.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h1b/h77/84526902706206.jpg?format=gallery-medium'      ]
     },
+    
+    
     {
       id: 5,
       name: 'Huawei P40 Pro',
+      
       description: 'Premium smartphone with an excellent camera.',
       rating: 4.3,
+      price: 449885,
       link: 'https://kaspi.kz/shop/p/huawei-pura-70-pro-12-gb-512-gb-chernyi-120278768/?c=750000000',
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hc5/haf/86332065447966.jpg?format=gallery-medium',
       gallery: [
@@ -88,11 +102,15 @@ export class HeaderComponent implements OnInit {
         'https://resources.cdn-kaspi.kz/img/m/p/h29/h08/86302132994078.jpg?format=gallery-medium'
       ]
     },
+    
+    
     {
       id: 6,
       name: 'OnePlus 9 Pro',
+      
       description: 'Flagship killer with high-end performance.',
       rating: 4.7,
+      price: 342400,
       link: 'https://kaspi.kz/shop/p/oneplus-9-pro-8-256gb-chernyi-101353185/?c=750000000',
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hef/h06/64116512194590.jpg?format=gallery-medium',
       gallery: [
@@ -101,11 +119,15 @@ export class HeaderComponent implements OnInit {
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxbcnheMZDcHrcboOInH-wxByzKbB-CAu_kg&s'
       ]
     },
+    
+    
     {
       id: 7,
       name: 'Oppo Reno 6',
+      
       description: 'Stylish design with powerful features.',
       rating: 4.2,
+      price: 148080,
       link: 'https://kaspi.kz/shop/p/oppo-reno-6-8-gb-128-gb-chernyi-102372847/?c=750000000',
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h36/h90/64144398614558.jpg?format=gallery-medium',
       gallery: [
@@ -114,24 +136,32 @@ export class HeaderComponent implements OnInit {
         'https://resources.cdn-kaspi.kz/img/m/p/h5b/hf2/64144406675486.jpg?format=gallery-medium'
       ]
     },
+    
+    
     {
       id: 8,
       name: 'Realme GT Master',
+      
       description: 'High performance at a reasonable price.',
       rating: 4.0,
-      link: 'https://kaspi.kz/shop/p/realme-gt-6-12-gb-256-gb-zelenyi-122177937/?c=75000000',
+      price: 294297,
+      link: 'https://kaspi.kz/shop/p/realme-gt-6-12-gb-256-gb-zelenyi-122177937/?c=750000000',
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hbb/hfe/86731990466590.png?format=gallery-medium',
       gallery: [
-        'https://resources.cdn-kaspi.kz/img/m/p/hbb/hfe/86731990466590.png?format=gallery-medium',
-        'https://resources.cdn-kaspi.kz/img/m/p/h3e/h70/86731990532126.png?format=gallery-medium',
-        'https://resources.cdn-kaspi.kz/img/m/p/h05/h08/86731991318558.jpg?format=gallery-medium'
+        'https://resources.cdn-kaspi.kz/img/m/p/h97/ha8/86731991121950.png?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/hf1/he0/86731991384094.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h17/h77/86731991908382.png?format=gallery-medium'
       ]
     },
+    
+    
     {
       id: 9,
       name: 'Google Pixel 6',
+      
       description: 'Smartphone with excellent camera and software experience.',
       rating: 4.6,
+      price: 264990,
       link: 'https://kaspi.kz/shop/p/google-pixel-6-8-128gb-chernyi-102811207/?c=750000000',
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h11/h34/64059214888990.jpg?format=gallery-medium',
       gallery: [
@@ -140,12 +170,16 @@ export class HeaderComponent implements OnInit {
         'https://resources.cdn-kaspi.kz/img/m/p/h0f/ha6/64059222818846.jpg?format=gallery-medium'
       ]
     },
+    
+    
     {
       id: 10,
-      name: 'Sony Xperia 5 III',
+      name: 'Sony Xperia 1 VI',
+      
       description: 'Compact design with powerful features.',
       rating: 4.1,
-      link: 'https://kaspi.kz/shop/p/sony-xperia-1-vi-12-gb-512-gb-krasnyi-134495455/?c=750000',
+      price: 719900,
+      link: 'https://kaspi.kz/shop/p/sony-xperia-1-vi-12-gb-512-gb-krasnyi-134495455/?c=750000000',
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p96/p7c/24147537.jpg?format=gallery-medium',
       gallery: [
         'https://resources.cdn-kaspi.kz/img/m/p/p96/p7c/24147537.jpg?format=gallery-medium',
@@ -155,21 +189,25 @@ export class HeaderComponent implements OnInit {
     }
   ];
 
+  
+  
   constructor() { }
 
   ngOnInit(): void { }
 
-  // Share via WhatsApp: opens WhatsApp with the product link
   shareViaWhatsApp(product: Product): void {
     const url = `https://wa.me/?text=${product.link}`;
     window.open(url);
     console.log(product);
   }
 
-  // Share via Telegram: opens Telegram with the product link and name
   shareViaTelegram(product: Product): void {
     const url = `https://t.me/share/url?url=${product.link}&text=${product.name}`;
     window.open(url);
+  }
+
+  buyProduct(product: Product): void {
+    alert(product.name +' was bought');
   }
 
   on(product: Product, img: string){

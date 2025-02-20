@@ -1,3 +1,9 @@
 h1{
-    color: rgb(0, 68, 255)
+    color: rgb(0, 0, 0);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
