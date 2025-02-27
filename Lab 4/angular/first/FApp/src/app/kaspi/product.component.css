@@ -40,6 +40,12 @@
   object-fit: scale-down;
 }
 
+.link{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
 .gallery {
   display: flex;
   gap: 5px;

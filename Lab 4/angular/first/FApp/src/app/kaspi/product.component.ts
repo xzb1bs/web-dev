@@ -21,6 +21,7 @@ export class ProductsComponent {
       description: 'iPhone 13 offers a sleek design, A15 Bionic chip, and an improved dual-camera system. ',
       rating: 4.5,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h32/h70/84378448199710.jpg?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-chernyi-102298404/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/h3d/h8e/64208874405918.jpg?format=gallery-medium',
@@ -34,6 +35,7 @@ export class ProductsComponent {
       description: 'iPhone 16 Pro Max features a 6.9-inch display, A18 Pro chip, and a 48MP Ultra Wide camera',
       rating: 4.7,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hcf/h69/87295489343518.png?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/apple-iphone-16-pro-max-256gb-chernyi-123787551/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/h08/hd3/87295489376286.png?format=gallery-medium',
@@ -47,6 +49,7 @@ export class ProductsComponent {
       description: 'Apple M1 Pro chip, 16-inch Liquid Retina XDR display, and up to 64GB of unified memory',
       rating: 5,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h01/h31/64373794570270.jpg?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/apple-macbook-pro-16-2021-16-2-16-gb-ssd-1024-gb-macos-mk193-102866164/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/h67/hc7/64373797191710.jpg?format=gallery-medium',
@@ -60,6 +63,7 @@ export class ProductsComponent {
       description: 'Intel Core i7-11800H, 16GB RAM, 512GB SSD, NVIDIA GeForce RTX 3060 6GB',
       rating: 4.8,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h58/h61/86274830073886.jpg?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/thunderobot-911-x-wild-hunter-g2-pro-15-6-16-gb-ssd-512-gb-win-11-pro--120386920/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/h39/hca/86274830139422.jpg?format=gallery-medium',
@@ -73,6 +77,7 @@ export class ProductsComponent {
       description: 'Apple S8 chip, 40mm Retina display, and up to 18 hours of battery life',
       rating: 4.9,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p55/p9b/5542335.png?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/apple-watch-se-gps-gen-2-2024-s-m-40-mm-bezhevyi-129172890/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/pe4/p9a/5542339.png?format=gallery-medium',
@@ -85,6 +90,7 @@ export class ProductsComponent {
       description: 'Huawei Kirin A1 chip, 1.39-inch AMOLED display, and up to 14 days of battery life',
       rating: 4.8,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h52/h7d/87248467787806.jpg?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/huawei-watch-gt-5-pro-46-mm-chernyi-chernyi-124097507/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/h87/h56/87248467853342.jpg?format=gallery-medium',
@@ -98,6 +104,7 @@ export class ProductsComponent {
       description: 'Active Noise Cancellation, Transparency mode, and up to 6 hours of listening time',
       rating: 4.9,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/ha3/h07/84108189630494.jpg?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/apple-airpods-pro-2-with-type-c-wireless-charging-belyi-113677582/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/h03/h0e/84108189696030.jpg?format=gallery-medium',
@@ -111,6 +118,7 @@ export class ProductsComponent {
       description: 'Active Noise Cancellation, Adaptive EQ, and up to 6 hours of listening time',
       rating: 4.8,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hfa/h5d/87309386514462.png?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/apple-airpods-4-active-noise-cancellation-belyi-124333921/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/hc8/he6/87309386219550.png?format=gallery-medium']
@@ -122,6 +130,7 @@ export class ProductsComponent {
       description: 'Bluetooth speaker with 10W output power, 1200mAh battery, and 10 hours of playback time',
       rating: 4.5,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h06/h36/81188929404958.png?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/portativnaja-kolonka-bt-speaker-zqs-4239-chernyi-110785723/?c=750000000',
       },
@@ -132,6 +141,7 @@ export class ProductsComponent {
       description: 'Smart speaker with voice assistant, 2.1 sound system.',
       rating: 4.7,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/he7/hb1/86887758004254.jpg?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/jandeks-stantsija-lait-2-fioletovyi-122679962/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/he2/h2d/86887758069790.jpg?format=gallery-medium',
@@ -145,6 +155,7 @@ export class ProductsComponent {
       description: 'iPhone 16 offers a sleek design, A18 Bionic chip, and an improved dual-camera system. ',
       rating: 5,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hf3/h65/87295470731294.png?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/apple-iphone-16-128gb-chernyi-123713453/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/he0/ha4/87295470764062.png?format=gallery-medium',
@@ -158,6 +169,7 @@ export class ProductsComponent {
       description: 'Samsung Galaxy A55 features a 6.7-inch display, Exynos 128 chip, and a 48MP Ultra Wide camera',
       rating: 4.8,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h21/h36/85428899414046.png?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/samsung-galaxy-a55-5g-8-gb-256-gb-temno-sinii-117420207/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/h14/hea/85428899479582.png?format=gallery-medium',
@@ -171,6 +183,7 @@ export class ProductsComponent {
       description: 'OPPO A78 offers a 6.5-inch display, Dimensity 700 chip, and a 48MP Ultra Wide camera',
       rating: 4.7,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hc0/h02/83108938809374.jpg?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/oppo-a78-8-gb-256-gb-chernyi-112808573/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/p43/p46/19319587.png?format=gallery-medium',
@@ -184,6 +197,7 @@ export class ProductsComponent {
       description: 'Intel Core i5-1135G7, 8GB RAM, 512GB SSD, Intel Iris Xe Graphics, 15.6-inch display',
       rating: 4.5,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h75/h14/65051456962590.jpg?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/lenovo-ideapad-3-15-6-8-gb-ssd-512-gb-win-11-15iau7-82rk00ewrk-107333284/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/h0f/h2c/65053326376990.jpg?format=gallery-medium',
@@ -197,6 +211,7 @@ export class ProductsComponent {
       description: 'AMD Ryzen 5 3500U, 8GB RAM, 512GB SSD, AMD Radeon Vega 8 Graphics, 15.6-inch display',
       rating: 4.7,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h0d/hc8/84558388887582.jpg?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/acer-aspire-3-15-6-8-gb-ssd-256-gb-win-11-a315-35-nx-a9aex-00h-114792265/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/h8f/h39/84558388953118.jpg?format=gallery-medium',
@@ -210,6 +225,7 @@ export class ProductsComponent {
       description: 'Intel Core i5-1135G7, 8GB RAM, 512GB SSD, Intel Iris Xe Graphics, 14-inch display',
       rating: 4.8,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p46/pa2/9286440.jpeg?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/hydra-h14-14-12-gb-ssd-256-gb-win-10-mkii-119194958/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/p09/pa0/9286441.jpg?format=gallery-medium',
@@ -223,6 +239,7 @@ export class ProductsComponent {
       description: 'Samsung Exynos W920 chip, 40mm Super AMOLED display, and up to 48 hours of battery life',
       rating: 4.9,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h76/h31/82569351266334.jpg?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/samsung-galaxy-watch6-44-mm-grafitovyi-chernyi-112368202/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/hb6/hc3/82569351299102.jpg?format=gallery-medium',
@@ -236,6 +253,7 @@ export class ProductsComponent {
       description: 'Sleek smartwatch with a 1.97" AMOLED display, health tracking, 100+ sports modes, built-in GPS, and long battery life for an all-in-one smart experience.',
       rating: 4.7,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hec/h25/87197780049950.jpg?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/xiaomi-redmi-watch-5-active-51-mm-chernyi-chernyi-123879372/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/h5b/h70/87197780181022.jpg?format=gallery-medium',
@@ -249,6 +267,7 @@ export class ProductsComponent {
       description: 'Apple S9 chip, 40mm Retina display, and up to 18 hours of battery life',
       rating: 4.9,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h20/ha6/83874218115102.png?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/apple-watch-series-9-gps-s-m-41-mm-sinii-chernyi-113398134/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/hf7/hce/83874218180638.png?format=gallery-medium',
@@ -261,6 +280,7 @@ export class ProductsComponent {
       description: 'Apple EarPods with Lightning Connector, built-in remote, and microphone',
       rating: 4.9,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hff/h5c/63764029243422.jpg?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/apple-earpods-lightning-belyi-4801876/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/h49/h9c/63764029636638.jpg?format=gallery-medium',
@@ -274,6 +294,7 @@ export class ProductsComponent {
       description: 'JBL Tune 510BT Wireless On-Ear Headphones with JBL Pure Bass Sound, Bluetooth 5.0, and up to 40 hours of battery life',
       rating: 4.9,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hef/h29/64030233788446.jpg?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/jbl-tune-510bt-chernyi-101420081/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/h36/ha0/64030236114974.jpg?format=gallery-medium',
@@ -287,6 +308,7 @@ export class ProductsComponent {
       description: 'Sony WH-1000XM4 Wireless Noise-Canceling Over-Ear Headphones with 30 hours of battery life, touch controls, and voice assistant',
       rating: 4.9,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p64/pde/11569142.jpg?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/sony-wh-1000xm4-chernyi-100471997/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/p80/pde/11569143.jpg?format=gallery-medium',
@@ -300,6 +322,7 @@ export class ProductsComponent {
       description: 'JBL GO 4 Portable Bluetooth Speaker with 5 hours of playtime, IPX7 waterproof rating, and built-in noise-canceling speakerphone',
       rating: 4.9,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h86/h6c/87088702521374.jpg?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/portativnaja-kolonka-jbl-go-4-chernyi-117967868/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/h5a/hfb/87088702586910.jpg?format=gallery-medium',
@@ -313,6 +336,7 @@ export class ProductsComponent {
       description: 'Smart speaker with voice assistant, 2.1 sound system.',
       rating: 4.7,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hbd/h09/84530104467486.jpg?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/jandeks-stantsija-midi-chernyi-114709674/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/h6f/h82/84530104533022.jpg?format=gallery-medium',
@@ -325,6 +349,7 @@ export class ProductsComponent {
       description: 'KINYO K12 Portable Bluetooth Speaker with 2 microphones, 5 hours of playtime, and built-in noise-canceling speakerphone',
       rating: 4.5,
       likes : 0,
+      liked : false, 
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h2e/h75/85036953567262.jpg?format=gallery-medium',
       link: 'https://kaspi.kz/shop/p/portativnaja-kolonka-kinyo-k12-2-mikrofona-bezhevyi-116279030/?c=750000000',
       gallerry: ['https://resources.cdn-kaspi.kz/img/m/p/he2/h06/85036953632798.jpg?format=gallery-medium']
@@ -356,13 +381,22 @@ export class ProductsComponent {
     this.products = newProducts;
   }
 
-  likeProduct(id : number){
-    for(var i = 0; i < this.products.length;i++){
-      if(this.products[i].id === id){
-        this.products[i].likes += 1;
-      }
+  // likeProduct(id : number){
+  //   for(var i = 0; i < this.products.length;i++){
+  //     if(this.products[i].id === id){
+  //       this.products[i].likes += 1;
+  //     }
+  //   }
+  // }
+
+  likeProduct(id: number) {
+    const product = this.products.find(p => p.id === id);
+    if (product) {
+      product.liked = !product.liked;
+      product.likes += product.liked ? 1 : -1;
     }
   }
+  
 
   shareProduct(link: string, platform: string) {
     let shareUrl = '';
