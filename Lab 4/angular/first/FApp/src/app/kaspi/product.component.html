@@ -30,6 +30,10 @@
         <button class="wbutton" (click)="shareProduct(product.link, 'whatsapp')">WhatsApp</button>
         <button class="tbutton" (click)="shareProduct(product.link, 'telegram')">Telegram</button>
       </div>
+      <div class="gallerry">
+        <div class="gallery-item"  *ngFor="let img of product.gallerry">
+          <img [src]="img" (click)="on(product.id, img)">
+      </div>
     </div>
   </div>
 
