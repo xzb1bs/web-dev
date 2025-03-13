@@ -11,7 +11,7 @@ export class AlbumService {
   
   private albumsUrl = 'https://jsonplaceholder.typicode.com/albums';
   private albumPhotoUrl = 'https://jsonplaceholder.typicode.com/albums';
-//for Detailing
+
   private albumDetailed = new BehaviorSubject<Album | null>(null);
   selectedAlbum = this.albumDetailed.asObservable();
 
@@ -19,7 +19,6 @@ export class AlbumService {
     this.albumDetailed.next(album);
   }
 
-//for Photos
   private albumPhoto = new BehaviorSubject<AlbumPhoto[]>([]);
   
   selectedPhoto = this.albumPhoto.asObservable();
@@ -29,7 +28,6 @@ export class AlbumService {
     
   }
 
-//receive Photo
   private newAlbumPhoto = new BehaviorSubject<AlbumPhoto | null>(null);
   selectedNewAlbumPhoto = this.newAlbumPhoto.asObservable();
   appendPhoto(albumPhoto: AlbumPhoto){
