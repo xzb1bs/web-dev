@@ -1,0 +1,39 @@
+
+<div class="main">
+
+    <div class="leftBar">
+        <h2>Update Title of Album</h2>
+        <p>Enter new Title name and ID of old title</p>
+        <input type="text" placeholder="EXAMPLE: New Title 3" [(ngModel)]="updTitle">
+        <button (click)="changeTitle()">Update</button>
+
+        <div class="createAlbum">
+            <h2>Create an Album</h2>
+            <input type="text" placeholder="Enter Title" [(ngModel)]="crTitle">
+            <h2>Load Image URL</h2>
+            <input type="text" [(ngModel)]="imgUrl" placeholder="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg">
+            <br><button (click)="createAlbum()">Create</button>
+        </div>
+    </div>
+
+    <div class="albumHeading">
+        <h1 class="text">Albums</h1>
+        <p *ngIf="loading">Loading...</p>
+        <p *ngIf="errorMessage">{{ errorMessage }}</p>
+    
+        <div *ngIf="albums.length > 0; else noAlbums" class="allAlbums">
+
+            <div *ngFor="let album of albums" class="album">
+                <p>ID: {{ album.id }}</p>
+                <p style="margin-bottom: 20px;">{{ album.title }}</p>
+                <button (click)="viewDetails(album)">details</button>
+                <button (click)="removeById(album.id)">remove</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #noAlbums>
+    <p>No albums found.</p>
+</ng-template>
+
