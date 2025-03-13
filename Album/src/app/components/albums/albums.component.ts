@@ -76,7 +76,7 @@ export class AlbumsComponent implements OnInit, OnDestroy{
   }
   
 
-  //For Detailing
+
   viewDetails(album: Album){
     this.albumService.selectAlbum(album);
     this.router.navigate(['/albums', album.id]);
