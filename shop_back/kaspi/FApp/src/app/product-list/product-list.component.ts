@@ -1,31 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductService, Product, Category } from '../services/product.service';
+import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  // styleUrls: ['./product-list.component.css']
+  styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-    categories: string[] = ['Phone', 'Laptop', 'Watches', 'Headphones', 'Audio equipment'];
-  products: Product[] = [];
-  selectedCategoryId: number | null = null;
+  products: any[] = [];
 
-  constructor(private productService: ProductService) {}
+  constructor(private apiService: ApiService) {}
 
   ngOnInit(): void {
-    this.loadCategories();
-  }
-
-  loadCategories(): void {
-    this.productService.getCategories().subscribe((data) => {
-      this.categories = data.map((category: Category) => category.name);
-    });
-  }
-
-  loadProductsByCategory(categoryId: number): void {
-    this.selectedCategoryId = categoryId;
-    this.productService.getProductsByCategory(categoryId).subscribe((data) => {
+    this.apiService.getProducts().subscribe(data => {
       this.products = data;
     });
   }
