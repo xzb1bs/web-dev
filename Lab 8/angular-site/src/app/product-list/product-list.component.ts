@@ -16,4 +16,7 @@ export class ProductListComponent implements OnInit {
       this.products = data;
     });
   }
+  loadProductsByCategory(categoryId: number): void {
+    console.log(`Loading products for category ID: ${categoryId}`);
+  }
 }
