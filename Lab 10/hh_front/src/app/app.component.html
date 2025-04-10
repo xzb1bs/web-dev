@@ -36,9 +36,9 @@
 <section *ngIf="selectedCompany">
   <button class="btn" (click)="goBack()">← Back</button>
 
-  <h2>{{ selectCompany.name }}</h2>
+  <h2>{{ selectedCompany.name }}</h2>
   <p><strong>City:</strong> {{ selectedCompany.city }}</p>
-  <p><strong>Description:</strong> {{ selectedCompany.description || 'Нет описания' }}</p>
+  <p><strong>Description:</strong> {{ selectedCompany.description || 'No description' }}</p>
 
   <h3 style="margin-top: 20px;">Company vacancies</h3>
   <div *ngIf="companyVacancies.length; else noVacancies">

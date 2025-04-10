@@ -16,3 +16,18 @@ class CompanyModelSerializer(serializers.ModelSerializer):
         model = Company
         fields = '__all__'
 
+class SimpleCompanySerializer(serializers.Serializer):
+    id = serializers.IntegerField(read_only=True)
+    name = serializers.CharField()
+    description = serializers.CharField()
+    city = serializers.CharField()
+    address = serializers.CharField()
+
+    def create(self, validated_data):
+        return Company.objects.create(**validated_data)
+
+    def update(self, instance, validated_data):
+        for attr, value in validated_data.items():
+            setattr(instance, attr, value)
+        instance.save()
+        return instance
