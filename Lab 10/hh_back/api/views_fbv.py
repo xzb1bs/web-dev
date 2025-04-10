@@ -8,7 +8,7 @@ def company_list(request):
     companies = Company.objects.all()
     serializer = CompanyModelSerializer(companies, many=True)
     return Response(serializer.data)
-
+    
 @api_view(['GET'])
 def company_detail(request, id):
     company = Company.objects.get(id=id)

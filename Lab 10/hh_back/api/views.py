@@ -44,4 +44,4 @@ class CompanyListView(generics.ListCreateAPIView):
     queryset = Company.objects.all()
     serializer_class = CompanyModelSerializer
 
-
+    
