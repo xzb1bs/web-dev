@@ -1,0 +1,54 @@
+<div class="container">
+  <header class="header">
+    <h1>HH</h1>
+    <p class="subtitle">Job search platform</p>
+
+    <!-- <div class="view-switch">
+      <button 
+        class="btn" 
+        [class.active]="viewMode === 'companies'" 
+        (click)="setView('companies')">
+        Companies
+      </button>
+      <button 
+        class="btn" 
+        [class.active]="viewMode === 'vacancies'" 
+        (click)="setView('vacancies')">
+        Vacancies
+      </button>
+    </div> -->
+  </header>
+
+  <section class="companies-section" *ngIf="viewMode === 'companies' && !selectedCompany">
+    <h2>Companies</h2>
+    <ul class="company-list">
+      <li
+        *ngFor="let company of companies"
+        (click)="showCompanyDetails(company)"
+        class="company-item"
+      >
+        <span class="company-name">{{ company.name }}</span>
+        
+      </li>
+    </ul>
+  </section>
+  
+<section *ngIf="selectedCompany">
+  <button class="btn" (click)="goBack()">← Back</button>
+
+  <h2>{{ selectCompany.name }}</h2>
+  <p><strong>City:</strong> {{ selectedCompany.city }}</p>
+  <p><strong>Description:</strong> {{ selectedCompany.description || 'Нет описания' }}</p>
+
+  <h3 style="margin-top: 20px;">Company vacancies</h3>
+  <div *ngIf="companyVacancies.length; else noVacancies">
+    <div class="vacancy-card" *ngFor="let v of companyVacancies">
+      <h4>{{ v.name }}</h4>
+      <p><strong>Salary:</strong> {{ v.salary }} $</p>
+      <p>{{ v.description || 'No description' }}</p>
+    </div>
+  </div>
+  <ng-template #noVacancies>
+    <p>There are no vacancies available.</p>
+  </ng-template>
+</section>

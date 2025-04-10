@@ -1,0 +1,110 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #2c3e50;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .companies-section, .vacancies-section {
+    margin-bottom: 40px;
+  }
+  
+  .company-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .company-item {
+    padding: 10px 15px;
+    margin: 8px 0;
+    background-color: #f3f6fb;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .company-item:hover {
+    background-color: #dceeff;
+  }
+  
+  .company-name {
+    font-weight: bold;
+  }
+  
+  .company-city {
+    color: #777;
+  }
+  
+  .vacancy-card {
+    background-color: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .vacancy-card h3 {
+    margin: 0 0 10px;
+  }
+  
+  .vacancy-card p {
+    margin: 5px 0;
+  }
+  
+  .btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* .view-switch {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  } */
+  
+  .btn.active {
+    background-color: #2c3e50;
+  }
+
+  .vacancy-card {
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .vacancy-card:hover {
+    background-color: #eef5ff;
+  }
+  
+  .company-item:hover {
+    background-color: #eef5ff;
+    transition: background 0.2s;
+  }
+  
